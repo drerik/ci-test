@@ -1,0 +1,28 @@
+<part>
+  <display-name>Image-gallery</display-name>
+  <config>
+    <input name="imageFolder" type="ContentSelector">
+      <label>Image-folder</label>
+      <occurrences minimum="1" maximum="1"/>
+      <config>
+        <relationship-type>system:reference</relationship-type>
+        <allow-content-type>base:folder</allow-content-type>
+      </config>
+    </input>
+    <input name="maxImages" type="Long">
+      <label>Max images</label>
+      <occurrences minimum="0" maximum="1"/>
+      <config/>
+    </input>
+    <input name="width" type="Long">
+      <label>Width</label>
+      <occurrences minimum="0" maximum="1"/>
+      <config/>
+    </input>
+    <input name="heigth" type="Long">
+      <label>Heigth</label>
+      <occurrences minimum="0" maximum="1"/>
+      <config/>
+    </input>
+  </config>
+</part>
